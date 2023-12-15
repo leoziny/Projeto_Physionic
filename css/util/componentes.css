@@ -106,3 +106,14 @@
   
    }
   
+
+
+   @media (max-width: 720px){
+    .botao{
+      padding: 15px;
+    }
+    
+    .botao.dois{
+      width: 140px;
+    }
+   }

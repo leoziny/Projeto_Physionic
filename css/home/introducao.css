@@ -54,4 +54,10 @@
         text-align: center;
         margin-top: 70px;
     }
+    .formulario-introducao{
+        width: 290px;
+    }
+    .botoes-introducao{
+        justify-content: center;
+    }
 }
