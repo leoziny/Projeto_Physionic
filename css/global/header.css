@@ -1,0 +1,130 @@
+.header li:hover{
+    color: rgb(209, 209, 209);
+}
+
+.lista-primaria{
+    gap: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.lista-primaria li:first-child{
+    margin-right: 60px;
+}
+.lista-primaria-dois{
+    display: none;
+}
+.menu-mobile {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #252B42;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    width: 10px;
+    padding-top: 20px; 
+    visibility: hidden;
+    padding-right: 80px;
+    padding-left: 10px;
+    transition: .3s ease;
+    z-index: 1000;
+}
+.menu-mobile li{
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.menu-mobile li:hover{
+    background-color: #90909081;
+    border-radius: 5px;
+}
+.menu-mobile > span{
+    position: relative;
+    font-size: 2rem;
+    margin-bottom: -20px;
+    top: -10px;
+    left: 3px;
+    cursor: pointer;
+    color: #ff0000;
+}
+.menu-mobile > span i:hover{
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+}
+.menu-mobile.ativo{
+    width: 200px;
+    visibility: visible;
+
+}
+.menu-mobile li:hover{
+    color: #ccc;
+}
+
+
+
+@media (max-width: 720px){
+    .lista-primaria{
+        display: none !important;
+    }
+    .nav-primaria > button{
+        display: none;
+    }
+    .lista-primaria-dois{
+        display: flex;
+        gap: 20px;
+    }
+    .lista-primaria-dois li:last-child{
+        position: relative;
+ 
+    }
+    .lista-primaria-dois li:last-child::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        display: none;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #252B42;
+        top: 100%;
+        left: 60%;
+        transform: translateX(-50%); 
+        border-radius: 0 0 6px 6px; 
+        
+
+
+        
+
+    }
+    .lista-primaria-dois li:last-child::before{
+        content: "Menu";
+        position: absolute;
+        background-color: #252B42;
+        top: 37px;
+        display: none;
+        padding: 10px;
+        left: -15px;
+        border-radius: 6px;
+
+    }
+    .lista-primaria-dois li:last-child.ativo::before,
+    .lista-primaria-dois li:last-child.ativo::after{
+        display: block;
+    }
+    .lista-primaria-dois i{
+        font-size: 1.3rem;
+        color: white;
+        cursor: pointer;
+    }
+    .lista-primaria-dois > li:first-child{
+        margin-right: 100px;
+    }
+    .icones-lista{
+        display: flex;
+        gap: 20px;
+    }
+  }
+

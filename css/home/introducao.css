@@ -1,0 +1,57 @@
+
+.introducao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    margin-top: 120px;
+    
+}
+.introducao  .font-1-h1, .introducao .font-1-h4{
+    margin-bottom: 30px;
+}
+.formulario-introducao{
+    padding: 20px;
+    background-color: white;
+    width: 330px;
+    border-radius: 20px;
+
+}
+.formulario-introducao form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+.input-form{
+    display: flex;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-self: center;
+    padding: 20px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #E6E6E6;
+    background: #F9F9F9;
+}
+.input-form.select{
+    width: 95%;
+}
+.botoes-introducao{
+    display: flex;
+    gap: 15px;
+}
+.formulario-introducao .botao{
+    width: 90%;
+    align-self: center;
+}
+
+@media (max-width: 720px){
+    .introducao{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 70px;
+    }
+}

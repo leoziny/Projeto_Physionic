@@ -1,0 +1,18 @@
+@import url(global/footer.css);
+@import url(global/header.css);
+@import url(global/global.css);
+
+
+@import url(util/componentes.css);
+@import url(util/cores.css);
+@import url(util/fontes.css);
+
+/* home */
+
+@import url(home/introducao.css);
+@import url(home/leading.css);
+@import url(home/depoimentos.css);
+@import url(home/faq.css);
+@import url(home/price.css);
+@import url(home/get-in.css);
+@import url(home/informacoes-adicionais.css);

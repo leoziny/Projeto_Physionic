@@ -1,0 +1,31 @@
+.informacoes-adicionais{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.links-informacoes li a:hover{
+    color: var(--cor-p1);
+
+}
+.links-informacoes{
+    gap: 10px;
+}
+.sociais{
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+
+@media (max-width:720px){
+    .informacoes-adicionais{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

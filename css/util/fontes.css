@@ -1,0 +1,114 @@
+/* Titulos */
+.font-1-h1 {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+}
+.font-1-h2.dois{
+    font-size: 2.3rem;
+}
+.font-1-h2 {
+    color: var(--text-color, #252B42);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+}
+
+
+/* Parágrafos Grandes */
+.font-1-h4 {
+    color: var(--light-text-color, #FFF);
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+}
+.font-1-p{
+    color: var(--second-text-color, #737373);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    max-width: 70ch;
+}
+
+/* Parágrafos Pequenos */
+.font-1-h6 {
+    color: var(--second-text-color, #737373);
+    font-family: Montserrat;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    max-width: 70ch;
+    text-align: center;
+}
+/* Classes combinadas */
+.font-xs { font-size: 0.75rem; }
+.font-s { font-size: 0.9rem; }
+.font-m { font-size: 1rem; }
+.font-l { font-size: 1.25rem; }
+.font-xl { font-size: 1.5rem; }
+
+.font-light { font-weight: 300; }
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+.font-italic { font-style: italic; }
+.font-normal { font-style: normal; }
+
+/* Exemplo de classes combinadas */
+.font-xs-bold { font-size: 0.75rem; font-weight: 700; }
+.font-m-italic { font-size: 1rem; font-style: italic; }
+.font-l-medium-italic { font-size: 1.25rem; font-weight: 500; font-style: italic; }
+
+/* Outras classes úteis */
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+/* Fonte Montserrat */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .font-1-h1 {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+
+    .font-1-h2 {
+        font-size: 1.5rem;
+        line-height: 48px;
+    }
+
+    .font-1-h4 {
+        font-size: 1rem;
+        line-height: 24px;
+    }
+
+    .font-1-p {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+
+    .font-1-h6 {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+}

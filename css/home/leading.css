@@ -1,0 +1,48 @@
+
+.informacoes-leading{
+    margin-bottom: 112px;
+}
+
+.cards-leading{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.card{
+    border-radius: 11px;
+    border: 1px solid #A9D6FF;
+}
+.name-card{
+    display: flex;
+    gap: 10px;
+    background-color: var(--cor-p2);
+    padding: 30px 50px;
+    border-radius: 11px;
+
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.icone-card{
+    border: 20px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+.lista-card{
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-card li:last-child{
+    color: var(--cor-p1);
+}
+
+
+@media (max-width: 720px){
+    .cards-leading{
+        flex-direction: column;
+        margin-top: -40px;
+    }
+}

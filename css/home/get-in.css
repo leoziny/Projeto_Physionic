@@ -1,0 +1,62 @@
+.get-bg{
+    background-color: #252B42;
+}
+.get-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 225px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.get-informacoes{
+    max-width: 60ch;
+
+}
+.get-informacoes > p{
+    color: #ccc;
+}
+
+
+.input-subscribe{
+    width: 350px;
+    border-radius: 0px 6px 6px 0px;
+
+    padding: 22px
+}
+.input-subscribe::placeholder{
+    font-size: 1.2rem;
+}
+.subscribe{
+    display: flex;
+    position: relative;
+}
+.subscribe > button{
+    position: absolute;
+    left: 246px;
+    top: 2px;
+    
+}
+
+@media (max-width: 720px){
+    .get-in{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .input-subscribe{
+        width: 250px;
+        border-radius: 7px;
+    }
+    .subscribe{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .subscribe > button{
+        position: static;
+        border-radius: 7px !important;
+
+    }
+}
