@@ -9,6 +9,7 @@
 .cards-depoimento{
     display: flex;
     gap: 60px;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .card-depoimento{
@@ -26,10 +27,14 @@
 .users{
     width: 50px;
 }
-
+@media (max-width: 1100px) {
+    .cards-depoimento{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 720px){
     .cards-depoimento{
-        flex-direction: column;
+        
         align-items: center;
         justify-content: center;
     }

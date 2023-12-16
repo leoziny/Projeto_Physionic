@@ -37,6 +37,13 @@
     top: 2px;
     
 }
+@media (max-width: 900px){
+    .get-in{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+}
 
 @media (max-width: 720px){
     .get-in{

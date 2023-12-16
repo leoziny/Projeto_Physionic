@@ -1,11 +1,13 @@
 
 .informacoes-leading{
     margin-bottom: 112px;
+    text-align: center;
 }
 
 .cards-leading{
     display: flex;
     gap: 20px;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .card{
@@ -39,10 +41,17 @@
     color: var(--cor-p1);
 }
 
-
+@media (max-width: 1100px){
+    .cards-leading{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width: 720px){
     .cards-leading{
         flex-direction: column;
         margin-top: -40px;
+    }
+    .name-card{
+        padding: 20px;
     }
 }

@@ -43,12 +43,7 @@ img {
   background: rgba(0, 0, 0, 0.50);
 }
 
-@media (max-width: 720px){
-  .imagem-fundo{
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
+
 
 
 .js [data-anima="scroll"]{
@@ -74,4 +69,11 @@ img {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 
+}
+
+@media (max-width: 720px){
+  .imagem-fundo{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
