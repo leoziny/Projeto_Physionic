@@ -18,6 +18,7 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 30px;
     background-color: #252B42;
     height: 100vh;
@@ -41,14 +42,15 @@
     background-color: #90909081;
     border-radius: 5px;
 }
-.menu-mobile > span{
+.menu-mobile  span{
     position: absolute;
     font-size: 2rem;
     margin-bottom: -20px;
     top: 20px;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
     color: #ff0000;
+    border-radius: 50%;
 }
 .menu-mobile > span i:hover{
     background-color: red;
@@ -56,11 +58,8 @@
     color: white;
 }
 .menu-mobile.ativo{
-    width: 200px;
+    width: 150px;
     visibility: visible;
-    overflow-x: auto;
-
-
 }
 .menu-mobile li:hover{
     color: #ccc;
@@ -79,44 +78,7 @@
         display: flex;
         gap: 5px;
     }
-    .lista-primaria-dois li:last-child{
-        position: relative;
- 
-    }
-    .lista-primaria-dois li:last-child::after{
-        content: '';
-        position: absolute;
-        width: 0;
-        display: none;
-        height: 0;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid #252B42;
-        top: 100%;
-        left: 60%;
-        transform: translateX(-50%); 
-        border-radius: 0 0 6px 6px; 
-        
 
-
-        
-
-    }
-    .lista-primaria-dois li:last-child::before{
-        content: "Menu";
-        position: absolute;
-        background-color: #252B42;
-        top: 37px;
-        display: none;
-        padding: 10px;
-        left: -15px;
-        border-radius: 6px;
-
-    }
-    .lista-primaria-dois li:last-child.ativo::before,
-    .lista-primaria-dois li:last-child.ativo::after{
-        display: block;
-    }
     .lista-primaria-dois i{
         font-size: 1.3rem;
         color: white;
